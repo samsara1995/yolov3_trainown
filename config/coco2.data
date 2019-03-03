@@ -1,0 +1,6 @@
+classes= 3
+train=/nfs/tmp/pycharm_project_350/sucai/image/trainImagePath.txt
+valid=/nfs/tmp/pycharm_project_350/sucai/image/validateImagePath.txt
+names=data/coco2.names
+backup=/nfs/tmp/pycharm_project_350/savemodel/
+eval=coco2
