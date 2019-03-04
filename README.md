@@ -84,6 +84,19 @@ Data augmentation as well as additional training tricks remains to be implemente
                 [--checkpoint_dir CHECKPOINT_DIR]
 ```
 
+增加：训练自己的数据集
+
+自己的数据集保存在sucai的文件夹里。image里分为trainimage和validateimage.
+label里保存了yolo训练的txt的格式的标签。xml里保存着labelImg生成的xml标签。
+
+我们将图片，对应的XML文件分别放在指定文件夹里以后，运行creat_txt.py生成图片所在的名称，即trainimageID。
+再运行voc_label.py，生成图片所在的路径trainImagePath.py和对应xml的txt文件。
+
+修改coco.names,yolov3_2.cfg,coco.data等配置文件。
+修改tiquyolo.py的参数，运行并生成的模型保存在checkpoint文件夹中。
+运行detect_own_model.py，测试结果。
+
+
 ## Credit
 ```
 @article{yolov3,
